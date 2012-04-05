@@ -1,13 +1,13 @@
 ---
 en:
-  do_subscribe_to_our_mailing_list: Subscribe to our mailing list?
+  do_subscribe_to_our_mailing_list: Subscribe to our Newsletter?
   enter_your_email: Subscribe to our Newsletter!
   subscribe: Subscribe
-  that_address_is_already_subscribed: You are already subscribed to our mailing list.
+  that_address_is_already_subscribed: You are already subscribed to the Newsletter
   something_went_wrong: Something went wrong when trying to add your subscription. Please try again later.
-  invalid_email_address: Please enter your full email address, e.g. some.one@example.com
-  you_have_been_subscribed: You have been subscribed to our mailing list. Please check your email soon for a confirmation. Thank you!
-  missing_email: There was no email address given.
+  invalid_email_address: Invalid email address
+  you_have_been_subscribed: You have been added to our Newsletter
+  missing_email: Invalid email address
   mailchimp_settings: Mail Chimp Settings
   mailchimp_settings_description: API Keys and options for Mail Chimp integration
   mailchimp_list_id: List ID

@@ -1,5 +1,4 @@
 require 'spree_core'
-require 'mail_chimp_hooks'
 require 'mail_chimp_sync'
 require 'hominid'
 
@@ -14,13 +13,13 @@ module MailChimp
               helper MailChimpHelper
           end
 
-          UsersController.send(:include, MailChimpSync::Sync)
+          Spree::UsersController.send(:include, MailChimpSync::Sync)
 
-          User.class_eval do 
+          Spree::User.class_eval do
               attr_accessible :is_mail_list_subscriber
           end 
 
-          AppConfiguration.class_eval do
+          Spree::AppConfiguration.class_eval do
               preference :mailchimp_double_opt_in, :boolean, :default => false
               preference :mailchimp_send_welcome, :boolean, :default => false
               preference :mailchimp_send_notify, :boolean, :default => false

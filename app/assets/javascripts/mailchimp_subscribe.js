@@ -1,8 +1,22 @@
 
+
+function valor(){
+alert('go for it');
+}
+
+
+$("*[data-spinner]").live('ajax:beforeSend', function(e){
+  $($(this).data('spinner')).show();
+  e.stopPropagation(); //Don't show spinner of parent elements.
+});
+$("*[data-spinner]").live('ajax:complete', function(){
+  $($(this).data('spinner')).hide();
+});
+
 var subscribe_email_default_txt = '';
 
 jQuery.ajaxSetup({
-    'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
+    'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascripts")}
 });
 
 var SpreeMailchimpApp = {
