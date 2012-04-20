@@ -25,7 +25,7 @@ Deface::Override.new(:virtual_path => "spree/layouts/spree_application",
                                 <div id=news_letter_signup><h6>Newsletter Signup</h6></div>
                                 <div id="news_form">
                                   <%= form_for :user, :remote => true, :id=> 'news_form', :url => :subscriptions do |f| %>
-                                            <%= text_field_tag :email, t('enter_your_email'), :class=>'email', :id=>'subscribe_email' %>
+                                            <%= text_field_tag :email, nil, :placeholder => t('enter_your_email'), :class=>'email', :id=>'subscribe_email' %>
                                             <p></p>
                                             <%= submit_tag t('subscribe'), :id => 'op_subscribe' %>
                                   <% end %>
